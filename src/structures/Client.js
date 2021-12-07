@@ -2,6 +2,7 @@ const { Client } = require('discord.js')
 const { readdirSync } = require('fs')
 const { join } = require('path')
 const { connect } = require('mongoose')
+const Models = require('../database/models/Models')
 
 module.exports = class extends Client {
     constructor (options) {
@@ -52,10 +53,9 @@ module.exports = class extends Client {
         const connection = await connect(process.env.MONGO_URL, {
             useNewUrlParser: true,
             useUnifiedTopology: true
-        })
+        }).then(() => console.log('[DataBase] Conectada com Sucesso!'));
 
-        console.log('database conectada com sucesso')
 
-        this.db = { connection }
+        this.db = { connection, ...Models }
     }
 }
