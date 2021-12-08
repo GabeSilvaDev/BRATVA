@@ -1,8 +1,12 @@
 const { Client } = require('discord.js')
+
 const { readdirSync } = require('fs')
 const { join } = require('path')
+
 const { connect } = require('mongoose')
 const Models = require('../database/models/Models')
+
+const erelaManager = require('./Manager')
 
 module.exports = class extends Client {
     constructor (options) {
@@ -11,6 +15,7 @@ module.exports = class extends Client {
         this.commands = []
         this.loadCommands()
         this.loadEvents()
+        this.manager = erelaManager(this)
     }
 
     registryCommands() {

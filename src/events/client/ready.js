@@ -12,6 +12,6 @@ module.exports = class extends Event {
         this.client.registryCommands()
         await this.client.connectToDatabase()
 
-        //this.client.manager.init(this.client.user.id)
+        this.client.manager.init(this.client.user.id)
     }
 }
