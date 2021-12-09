@@ -232,3 +232,255 @@
 2021-12-08 17:31:18.183  INFO 11312 --- [XNIO-1 I/O-12] lavalink.server.io.SocketServer          : {"op":"play","guildId":"877801686918385724","track":"QAAAxAIALkJpbGxpZSBFaWxpc2ggLSA2LjE4LjE4IFtUcmFkdcOnw6NvL0xlZ2VuZGFkb10ACUp1bGlldCBCLgAAAAAABBrIAAs2cHBuc2Jud1U3NAABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PTZwcG5zYm53VTc0AQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS82cHBuc2Jud1U3NC9zZGRlZmF1bHQuanBnAAd5b3V0dWJlAAAAAAAAAAA="}
 2021-12-08 17:31:18.379  INFO 11312 --- [XNIO-1 I/O-12] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:60781 -- CloseStatus[code=1006, reason=]
 2021-12-08 17:31:18.380  INFO 11312 --- [XNIO-1 I/O-12] lavalink.server.io.SocketContext         : Shutting down 1 playing players.
+2021-12-08 20:24:34.756  INFO 1484 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        df046f418b361af17e244536a670cc969eb60fba-SNAPSHOT
+	Build:          Unofficial
+	Build time:     16.08.2021 16:06:26 UTC
+	Branch:         dev
+	Commit:         df046f4
+	Commit time:    16.08.2021 16:00:50 UTC
+	Kotlin:         1.5.21
+	JVM:            17.0.1
+	Lavaplayer:     1.3.92
+
+2021-12-08 20:24:34.904  INFO 1484 --- [main] lavalink.server.Launcher                 : Starting Launcher using Java 17.0.1 on DESKTOP-1KI1J4R with PID 1484 (C:\Users\Gabriel\Desktop\bot_2\lavalink\Lavalink.jar started by Gabriel in C:\Users\Gabriel\Desktop\bot_2\lavalink)
+2021-12-08 20:24:34.904  INFO 1484 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2021-12-08 20:24:37.547  WARN 1484 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-12-08 20:24:37.585  INFO 1484 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-12-08 20:24:37.585  INFO 1484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2579 ms
+2021-12-08 20:24:37.967  INFO 1484 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2021-12-08 20:24:38.277  INFO 1484 --- [main] lavalink.server.config.KoeConfiguration  : OS: Windows 10, Arch: amd64
+2021-12-08 20:24:38.277  WARN 1484 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2021-12-08 20:24:38.278  INFO 1484 --- [main] lavalink.server.config.KoeConfiguration  : Using the 'default' byte buf allocator
+2021-12-08 20:24:38.291  INFO 1484 --- [main] c.g.n.nativeloader.NativeLibLoader       : Native library timescale: loading with parts [Part{feature=X86.avx2, part=avx2}]
+2021-12-08 20:24:38.294  INFO 1484 --- [main] c.g.n.nativeloader.NativeLibLoader       : Native library detector: loading with parts []
+2021-12-08 20:24:38.306  INFO 1484 --- [main] c.g.n.nativeloader.NativeLibLoader       : Native library detector: successfully loaded.
+2021-12-08 20:24:38.324  INFO 1484 --- [main] c.g.n.nativeloader.NativeLibLoader       : Native library timescale: successfully loaded.
+2021-12-08 20:24:38.325  INFO 1484 --- [main] lavalink.server.io.SocketServer          : Timescale natives loaded successfully.
+2021-12-08 20:24:38.338  WARN 1484 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2021-12-08 20:24:39.162  INFO 1484 --- [main] io.undertow                              : starting server: Undertow - 2.2.9.Final
+2021-12-08 20:24:39.178  INFO 1484 --- [main] org.xnio                                 : XNIO version 3.8.4.Final
+2021-12-08 20:24:39.198  INFO 1484 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.4.Final
+2021-12-08 20:24:39.286  INFO 1484 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2021-12-08 20:24:39.351  INFO 1484 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 2333 (http)
+2021-12-08 20:24:39.365  INFO 1484 --- [main] lavalink.server.Launcher                 : Started Launcher in 5.402 seconds (JVM running for 6.13)
+2021-12-08 20:24:45.794  INFO 1484 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-08 20:24:45.795  INFO 1484 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-08 20:24:45.796  INFO 1484 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-08 20:24:45.824  INFO 1484 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:49299
+2021-12-08 20:24:45.904  INFO 1484 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established from erela.js
+2021-12-08 20:24:46.635  WARN 1484 --- [pool-3-thread-1] o.u.p.windows.PerfCounterWildcardQuery   : Disabling further attempts to query Processor Information.
+2021-12-08 20:24:55.897  INFO 1484 --- [XNIO-1 task-1] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:6.18.18"
+2021-12-08 20:24:57.242  INFO 1484 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: 6.18.18
+2021-12-08 20:24:57.310  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"volume","guildId":"877801686918385724","volume":100}
+2021-12-08 20:24:57.315  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"play","guildId":"877801686918385724","track":"QAAAxAIALkJpbGxpZSBFaWxpc2ggLSA2LjE4LjE4IFtUcmFkdcOnw6NvL0xlZ2VuZGFkb10ACUp1bGlldCBCLgAAAAAABBrIAAs2cHBuc2Jud1U3NAABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PTZwcG5zYm53VTc0AQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS82cHBuc2Jud1U3NC9zZGRlZmF1bHQuanBnAAd5b3V0dWJlAAAAAAAAAAA="}
+2021-12-08 20:24:57.571  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"sessionId":"34243d837e4968a70aaaefb6df6aa033","op":"voiceUpdate","guildId":"877801686918385724","event":{"token":"e12d3facc482016e","guild_id":"877801686918385724","endpoint":"brazil7610.discord.media:443"}}
+2021-12-08 20:25:59.060  INFO 1484 --- [XNIO-1 task-1] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:industry baby"
+2021-12-08 20:26:00.000  INFO 1484 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: industry baby
+2021-12-08 20:29:26.554  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"play","guildId":"877801686918385724","track":"QAAAzQIAN0xpbCBOYXMgWCwgSmFjayBIYXJsb3cgLSBJTkRVU1RSWSBCQUJZIChPZmZpY2lhbCBWaWRlbykACUxpbCBOYXMgWAAAAAAAA5ngAAtVVEhMS0hMX3docwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVVUSExLSExfd2hzAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9VVEhMS0hMX3docy9zZGRlZmF1bHQuanBnAAd5b3V0dWJlAAAAAAAAAAA="}
+2021-12-08 20:33:22.272  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"877801686918385724"}
+2021-12-08 20:37:15.209  INFO 1484 --- [XNIO-1 task-1] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:THATS WHAT I WANT"
+2021-12-08 20:37:16.248  INFO 1484 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: THATS WHAT I WANT
+2021-12-08 20:37:16.265  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"volume","guildId":"877801686918385724","volume":100}
+2021-12-08 20:37:16.266  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"play","guildId":"877801686918385724","track":"QAAAxAIALkxpbCBOYXMgWCAtIFRIQVRTIFdIQVQgSSBXQU5UIChPZmZpY2lhbCBWaWRlbykACUxpbCBOYXMgWAAAAAAAAnjQAAtRRFlEUkE1SlBMRQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVFEWURSQTVKUExFAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9RRFlEUkE1SlBMRS9zZGRlZmF1bHQuanBnAAd5b3V0dWJlAAAAAAAAAAA="}
+2021-12-08 20:37:16.896  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"sessionId":"34243d837e4968a70aaaefb6df6aa033","op":"voiceUpdate","guildId":"877801686918385724","event":{"token":"25b4dd851a324df0","guild_id":"877801686918385724","endpoint":"brazil7610.discord.media:443"}}
+2021-12-08 20:39:58.442  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"877801686918385724"}
+2021-12-08 20:40:21.731  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:49299 -- CloseStatus[code=1006, reason=]
+2021-12-08 20:40:21.732  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-12-08 20:40:57.122  INFO 1484 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:58739
+2021-12-08 20:40:57.124  INFO 1484 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established from erela.js
+2021-12-08 20:41:13.596  INFO 1484 --- [XNIO-1 task-1] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:that what i want"
+2021-12-08 20:41:14.548  INFO 1484 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: that what i want
+2021-12-08 20:41:14.573  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"op":"volume","guildId":"877801686918385724","volume":100}
+2021-12-08 20:41:14.574  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"op":"play","guildId":"877801686918385724","track":"QAAAxAIALkxpbCBOYXMgWCAtIFRIQVRTIFdIQVQgSSBXQU5UIChPZmZpY2lhbCBWaWRlbykACUxpbCBOYXMgWAAAAAAAAnjQAAtRRFlEUkE1SlBMRQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVFEWURSQTVKUExFAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9RRFlEUkE1SlBMRS9zZGRlZmF1bHQuanBnAAd5b3V0dWJlAAAAAAAAAAA="}
+2021-12-08 20:41:15.209  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"sessionId":"a18512a9e68c5a163f66624c3105e5ee","op":"voiceUpdate","guildId":"877801686918385724","event":{"token":"96f993b067538262","guild_id":"877801686918385724","endpoint":"brazil7610.discord.media:443"}}
+2021-12-08 20:41:28.953  INFO 1484 --- [XNIO-1 task-1] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:sim eu vejo h*"
+2021-12-08 20:41:29.780  INFO 1484 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: sim eu vejo h*
+2021-12-08 20:41:37.259  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"op":"stop","guildId":"877801686918385724"}
+2021-12-08 20:41:37.261  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"op":"play","guildId":"877801686918385724","track":"QAAA1QIAP3NvdXpha2FtaSAtIFNpbSwgZXUgdmVqbyBoZW50Kiog7aC97biLIHwgUHJvZC4gSm93IFNhbnRoICgrMTQgKQAJU291emFrYW1pAAAAAAACPjgACzU5TzMyUUtyQXpnAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9NTlPMzJRS3JBemcBADBodHRwczovL2kueXRpbWcuY29tL3ZpLzU5TzMyUUtyQXpnL3NkZGVmYXVsdC5qcGcAB3lvdXR1YmUAAAAAAAAAAA=="}
+2021-12-08 20:41:42.591  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"op":"stop","guildId":"877801686918385724"}
+2021-12-08 20:41:42.593  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"877801686918385724"}
+2021-12-08 20:41:51.747  INFO 1484 --- [XNIO-1 task-1] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:thats what i want"
+2021-12-08 20:41:52.524  INFO 1484 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: thats what i want
+2021-12-08 20:41:52.528  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"op":"volume","guildId":"877801686918385724","volume":100}
+2021-12-08 20:41:52.529  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"op":"play","guildId":"877801686918385724","track":"QAAAxAIALkxpbCBOYXMgWCAtIFRIQVRTIFdIQVQgSSBXQU5UIChPZmZpY2lhbCBWaWRlbykACUxpbCBOYXMgWAAAAAAAAnjQAAtRRFlEUkE1SlBMRQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVFEWURSQTVKUExFAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9RRFlEUkE1SlBMRS9zZGRlZmF1bHQuanBnAAd5b3V0dWJlAAAAAAAAAAA="}
+2021-12-08 20:41:52.805  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"sessionId":"a18512a9e68c5a163f66624c3105e5ee","op":"voiceUpdate","guildId":"877801686918385724","event":{"token":"76991ce76d0ada37","guild_id":"877801686918385724","endpoint":"brazil7610.discord.media:443"}}
+2021-12-08 20:44:34.302  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"877801686918385724"}
+2021-12-08 20:54:36.371  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:58739 -- CloseStatus[code=1006, reason=]
+2021-12-08 20:54:36.371  INFO 1484 --- [XNIO-1 I/O-10] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2021-12-08 20:55:43.741  INFO 1484 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:55830
+2021-12-08 20:55:43.744  INFO 1484 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established from erela.js
+2021-12-08 20:55:57.884  INFO 1484 --- [XNIO-1 task-1] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:então me sacrifico"
+2021-12-08 20:55:57.923 ERROR 1484 --- [lava-daemon-pool-info-loader-2-thread-1] c.s.d.l.p.DefaultAudioPlayerManager      : Error in loading item ytsearch:então me sacrifico
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something went wrong when looking up the track
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:45) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.dispatchItemLoadFailure(DefaultAudioPlayerManager.java:237) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:226) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.lang.RuntimeException: java.net.SocketException: Connection reset
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:59) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSearchProvider.loadSearchResult(YoutubeSearchProvider.java:66) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.search(YoutubeAudioSourceManager.java:262) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.search(YoutubeAudioSourceManager.java:228) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.route(DefaultYoutubeLinkRouter.java:37) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItemOnce(YoutubeAudioSourceManager.java:196) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItem(YoutubeAudioSourceManager.java:131) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:438) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:420) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	... 4 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059) ~[na:na]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at com.sedmelluq.discord.lavaplayer.tools.io.HttpInterface.execute(HttpInterface.java:72) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSearchProvider.loadSearchResult(YoutubeSearchProvider.java:57) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	... 12 common frames omitted
+
+2021-12-08 20:55:57.925 ERROR 1484 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Load failed
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something went wrong when looking up the track
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:45) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.dispatchItemLoadFailure(DefaultAudioPlayerManager.java:237) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:226) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.lang.RuntimeException: java.net.SocketException: Connection reset
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:59) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSearchProvider.loadSearchResult(YoutubeSearchProvider.java:66) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.search(YoutubeAudioSourceManager.java:262) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.search(YoutubeAudioSourceManager.java:228) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.route(DefaultYoutubeLinkRouter.java:37) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItemOnce(YoutubeAudioSourceManager.java:196) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItem(YoutubeAudioSourceManager.java:131) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:438) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:420) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	... 4 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059) ~[na:na]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at com.sedmelluq.discord.lavaplayer.tools.io.HttpInterface.execute(HttpInterface.java:72) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSearchProvider.loadSearchResult(YoutubeSearchProvider.java:57) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	... 12 common frames omitted
+
+2021-12-08 20:55:57.926 ERROR 1484 --- [lava-daemon-pool-info-loader-2-thread-1] l.server.player.AudioLoaderRestHandler   : Track loading failed
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something went wrong when looking up the track
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:45) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.dispatchItemLoadFailure(DefaultAudioPlayerManager.java:237) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:226) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.lang.RuntimeException: java.net.SocketException: Connection reset
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:59) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSearchProvider.loadSearchResult(YoutubeSearchProvider.java:66) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.search(YoutubeAudioSourceManager.java:262) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.search(YoutubeAudioSourceManager.java:228) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.route(DefaultYoutubeLinkRouter.java:37) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItemOnce(YoutubeAudioSourceManager.java:196) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItem(YoutubeAudioSourceManager.java:131) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:438) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:420) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:218) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	... 4 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1455) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059) ~[na:na]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.12.jar!/:4.4.12]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.10.jar!/:4.5.10]
+	at com.sedmelluq.discord.lavaplayer.tools.io.HttpInterface.execute(HttpInterface.java:72) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSearchProvider.loadSearchResult(YoutubeSearchProvider.java:57) ~[lavaplayer-fork-5eee2e9.jar!/:na]
+	... 12 common frames omitted
+
+2021-12-08 20:56:18.487  INFO 1484 --- [XNIO-1 task-1] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:thats what i want"
+2021-12-08 20:56:19.571  INFO 1484 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: thats what i want
+2021-12-08 20:56:19.591  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"volume","guildId":"877801686918385724","volume":100}
+2021-12-08 20:56:19.593  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"play","guildId":"877801686918385724","track":"QAAAxAIALkxpbCBOYXMgWCAtIFRIQVRTIFdIQVQgSSBXQU5UIChPZmZpY2lhbCBWaWRlbykACUxpbCBOYXMgWAAAAAAAAnjQAAtRRFlEUkE1SlBMRQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVFEWURSQTVKUExFAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9RRFlEUkE1SlBMRS9zZGRlZmF1bHQuanBnAAd5b3V0dWJlAAAAAAAAAAA="}
+2021-12-08 20:56:20.234  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"sessionId":"26681aaee2b07c13d2312fa3fc9eaa38","op":"voiceUpdate","guildId":"877801686918385724","event":{"token":"567347c167c2dcfe","guild_id":"877801686918385724","endpoint":"brazil7610.discord.media:443"}}
+2021-12-08 20:56:24.956  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"pause","guildId":"877801686918385724","pause":true}
+2021-12-08 20:56:28.315  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"pause","guildId":"877801686918385724","pause":false}
+2021-12-08 20:59:05.156  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"877801686918385724"}
+2021-12-08 21:08:21.897  INFO 1484 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:55830 -- CloseStatus[code=1006, reason=]

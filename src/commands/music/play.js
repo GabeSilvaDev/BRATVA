@@ -21,7 +21,6 @@ module.exports = class extends Command {
         if (interaction.guild.me.voice.channel && interaction.guild.me.voice.channel.id !== interaction.member.voice.channel.id) return interaction.reply({ content: `Você precisa estar no mesmo canal de voz que eu para utilizar este comando!`, ephemeral: true })
 
         const search = interaction.options.getString('música')
-
         let res;
 
         try {
