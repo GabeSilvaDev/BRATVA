@@ -10,6 +10,6 @@ module.exports = class extends Command {
 
     run = (interaction) => {
 
-        
+        interaction.reply({ content: "Em criação", ephemeral: true })
     }
 }
