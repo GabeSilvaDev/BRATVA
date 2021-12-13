@@ -8,7 +8,7 @@ module.exports = class extends Event {
     }
 
     run = async () => {
-        console.log(`Bot ${this.client.user.username} logado com sucesso em ${this.client.guilds.cache.size} servidores.`)
+        console.log(`[${this.client.user.username}] Logado com Sucesso em: ${this.client.guilds.cache.size} Servidores!`)
         this.client.registryCommands()
         await this.client.connectToDatabase()
 

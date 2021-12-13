@@ -1,28 +1,46 @@
+const { MessageEmbed } = require('discord.js');
 const { Manager } = require('erela.js')
 
 module.exports = (client) => {
     return new Manager({
         nodes: [{
-                host: "localhost",
-                password: "lavalink1234",
-                port: 2333,
-            }],
+              host: "localhost",
+              port: 80,
+               password: "discloud"
+             }],
         send: (id, payload) => {
             const guild = client.guilds.cache.get(id)
             if (guild) guild.shard.send(payload)
         }
     })
-        .on("nodeConnect", node => console.log(`Node "${node.options.identifier}" conectado.`))
+        .on("nodeConnect", node => console.log(`[Node] Host: ${node.options.identifier} Conectada com Sucesso!`))
         .on("nodeError", (node, error) => console.log(
-            `Node "${node.options.identifier}" encountered an error: ${error.message}.`
+            `Node "${node.options.identifier}" Erro: ${error.message}.`
         ))
         .on("trackStart", (player, track) => {
             const channel = client.channels.cache.get(player.textChannel)
-            channel.send(`Tocando agora: \`${track.title}\`, solicitado por ${track.requester.toString()}.`)
+
+            //[${queue.current.title}](${queue.current.uri})
+            const embed = new MessageEmbed()
+            .setColor('RANDOM')
+            .setTitle(`Solicitado por ${track.requester.username}`)
+            .setDescription(`Tocando agora: [${track.title}](${track.uri})`)
+            .setTimestamp()
+            //.setFooter("Desenvolvido Por: ! Gabriel「ᴏʟᴅ」#4482")
+            
+
+            channel.send({ embeds: [embed] })
         })
         .on("queueEnd", player => {
             const channel = client.channels.cache.get(player.textChannel)
-            channel.send("A fila de músicas acabou.")
+
+            const embed = new MessageEmbed()
+            .setColor('RANDOM')
+            .setDescription("A PlayList de Músicas Acabou!")
+            .setTimestamp()
+            //.setFooter("Desenvolvido Por: ! Gabriel「ᴏʟᴅ」#4482")
+            channel.send({ embeds: [embed]})
+            //channel.send("Acabou")
             player.destroy()
         })
 }

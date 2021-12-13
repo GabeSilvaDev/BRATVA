@@ -6,19 +6,21 @@ module.exports = class extends Command {
     constructor(client) {
         super(client, {
             name: 'queue',
-            description: 'Mostra a fila de músicas atual.'
+            description: 'Mostra sua PlayList!'
         })
     }
 
     run = (interaction) => {
         const player = this.client.manager.get(interaction.guild.id)
-        if (!player) return interaction.reply({ content: 'Não estou tocando neste servidor.', ephemeral: true })
+        if (!player) return interaction.reply({ content: ':x: | Não estou tocando neste servidor.', ephemeral: true })
 
         const queue = player.queue
 
         const embed = new MessageEmbed()
-            .setTitle(`Fila de músicas do servidor`)
-            .setColor('BLUE')
+            .setTitle(`PlayList`)
+            .setColor('RANDOM')
+            .setTimestamp()
+            .setFooter(`${interaction.user.username}`, interaction.member.displayAvatarURL({ format:"png"}))
 
         const tracks = queue.slice(0, 10)
 

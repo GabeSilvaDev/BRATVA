@@ -1,7 +1,15 @@
 const { Client } = require('discord.js')
+const { spawn, spawnSync } = require("child_process")
+const moment = require("moment")
+const time = moment().unix()
 
-const { readdirSync } = require('fs')
+const { readdirSync, appendFileSync, unlinkSync, mkdirSync, rmdirSync } = require('fs')
 const { join } = require('path')
+const { config } = require("dotenv");
+config({
+    path: __dirname + "/.env"
+});
+
 
 const { connect } = require('mongoose')
 const Models = require('../database/models/Models')
@@ -20,8 +28,8 @@ module.exports = class extends Client {
 
     registryCommands() {
         // temporária
-        this.guilds.cache.get('877801686918385724').commands.set(this.commands)
-        //this.application.commands.set(this.commands)
+        //this.guilds.cache.get('877801686918385724').commands.set(this.commands)
+        this.application.commands.set(this.commands)
     }
 
     loadCommands(path = "src/commands") {
@@ -37,6 +45,7 @@ module.exports = class extends Client {
                 this.commands.push(cmd)
             }
         }
+        console.log("[Comandos] Carregados com Sucesso!")
     }
 
     loadEvents(path = 'src/events') {
@@ -52,6 +61,7 @@ module.exports = class extends Client {
                 this.on(evt.name, evt.run)
             }
         }
+        console.log("[Eventos] Carregados com Sucesso!")
     }
 
     async connectToDatabase() {

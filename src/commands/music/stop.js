@@ -1,15 +1,15 @@
 const Command = require('../../structures/Command')
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js')
 
 module.exports = class extends Command {
     constructor(client) {
         super(client, {
-            name: 'pause',
-            description: 'Pausa a música que está tocando!'
+            name: 'stop',
+            description: 'Encerra a PlayList de músicas tocando!'
         })
     }
 
-    run = (interaction) => {
+    run = async (interaction, args) => {
         const player = this.client.manager.get(interaction.guild.id)
         if (!player) return interaction.reply({ content: ':x: | Não estou tocando neste servidor.', ephemeral: true })
 
@@ -17,15 +17,14 @@ module.exports = class extends Command {
         if (!memberVoiceChannel) return interaction.reply({ content: ':x: | Você precisa estar em um canal de voz para usar este comando.', ephemeral: true })
         if (memberVoiceChannel.id !== player.voiceChannel) return interaction.reply({ content: ':x: | Você precisa estar no mesmo canal de voz que eu.', ephemeral: true })
 
-        if (player.paused) return interaction.reply({ content: ':x: | A música já está pausada!', ephemeral: true })
-
-        player.pause(true)
+        player.destroy();
         const embed = new MessageEmbed()
-        .setTitle("Pause")
+        .setTitle("Stop")
         .setColor('RANDOM')
-        .setDescription(`Musica Pausada com Sucesso!`)
+        .setDescription(`A PlayList de musica foi encerrada com sucesso!`)
         .setTimestamp()
         .setFooter(`${interaction.user.username}`, interaction.member.displayAvatarURL({ format:"png"}))
-        return interaction.reply({ embeds: [embed], ephemeral: true })
+
+        return interaction.reply({ embeds: [embed] });
     }
 }

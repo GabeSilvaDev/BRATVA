@@ -2,6 +2,7 @@ require('dotenv').config()
 
 const Client = require('./src/structures/Client')
 
+
 const client = new Client({
     intents: [
         'GUILDS',
@@ -13,6 +14,8 @@ const client = new Client({
         'GUILD_PRESENCES' 
     ]
 })
+
+
 
 
 client.login(process.env.BOT_TOKEN)
