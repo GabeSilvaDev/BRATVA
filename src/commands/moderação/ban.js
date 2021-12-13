@@ -9,9 +9,7 @@ module.exports = class extends Command {
     }
 
     run = (interaction) => {
-        interaction.reply({
-            content: `O ping do bot é \`${this.client.ws.ping}\`ms.`,
-            ephemeral: true
-        })
+
+        
     }
 }
