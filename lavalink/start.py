@@ -2,7 +2,7 @@ from os import system, environ
 
 class Lavalink:
     def __init__(self):
-        self.replace_port_command = 'sed -i "s|80|$PORT|" application.yml'
+        self.replace_port_command = 'sed -i "s|2333|$PORT|" application.yml'
 
         self.replace_password_command = 'sed -i "s|discloud|$PASSWORD|" application.yml'
         self.replace_password_command_no_password = 'sed -i "s|discloud|youshallnotpass|" application.yml'

@@ -5,7 +5,7 @@ module.exports = (client) => {
     return new Manager({
         nodes: [{
               host: "localhost",
-              port: 80,
+              port: 2333,
                password: "discloud"
              }],
         send: (id, payload) => {
