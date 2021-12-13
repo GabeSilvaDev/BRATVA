@@ -4,9 +4,12 @@ const { Manager } = require('erela.js')
 module.exports = (client) => {
     return new Manager({
         nodes: [{
-              host: "localhost",
-              port: 2333,
-               password: "discloud"
+              host: "bratva-lavalink.herokuapp.com",
+              port: 80,
+               password: "discloud",
+               retryAmount: 30,
+                retryDelay: 3000,
+                secure: false
              }],
         send: (id, payload) => {
             const guild = client.guilds.cache.get(id)
@@ -43,4 +46,6 @@ module.exports = (client) => {
             //channel.send("Acabou")
             player.destroy()
         })
+
+        
 }
