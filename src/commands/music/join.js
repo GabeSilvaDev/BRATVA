@@ -10,35 +10,30 @@ module.exports = class extends Command {
     }
 
     run = async (interaction) => {
-        const player = this.client.manager.get(interaction.guild.id)
-        if (!player) return interaction.reply({ content: ':x: | Não estou tocando neste servidor.', ephemeral: true })
 
         const memberVoiceChannel = interaction.member.voice.channel
         if (!memberVoiceChannel) return interaction.reply({ content: ':x: | Você precisa estar em um canal de voz para usar este comando.', ephemeral: true })
-        if (memberVoiceChannel.id !== player.voiceChannel) return interaction.reply({ content: ':x: | Você precisa estar no mesmo canal de voz que eu.', ephemeral: true })
 
-        player = client.manager.create({
-            guild: interaction.guild.id,
-            voiceChannel: interaction.member.voice.channel.id,
-            textChannel: interaction.channel.id,
-            selfDeafen: config.settings.selfDeaf,
-          });
-
+        const player = this.client.manager.create({
+          guild: interaction.guild.id,
+          voiceChannel: interaction.member.voice.channel.id,
+          textChannel: interaction.channel.id
+      })
           if (player.state !== "CONNECTED") { 
             player.connect();
             player.stop();
           }
           else {
             var vc = player.voiceChannel;
-            var voiceChannel = message.guild.channels.cache.get(player.voiceChannel);
+            var voiceChannel = interaction.guild.channels.cache.get(player.voiceChannel);
             
-            embed = new MessageEmbed()
-              .setColor(ee.wrongcolor)
-              .setFooter(ee.footertext, ee.footericon)
-              .setTitle(`${emoji.msg.ERROR} ERROR | I am already connected somewhere`)
-              .setDescription(`I am connected in: \`${vc ? voiceChannel ? voiceChannel.name : vc : "could not get voicechanneldata"}\``)
+            const embed = new MessageEmbed()
+              .setColor('RANDOM')
+              .setFooter(`${interaction.user.username}`, interaction.member.displayAvatarURL({ format:"png"}))
+              .setTitle(`:x: | Já estou conectado em algum lugar`)
+              .setDescription(`Estou conectado em: \`${vc ? voiceChannel ? voiceChannel.name : vc : "não foi possível obter dados do canal de voz"}\``)
 
-            return message.channel.send({ embeds: [embed] })
+            return interaction.channel.send({ embeds: [embed] })
           }
         }
     }
