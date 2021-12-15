@@ -19,11 +19,25 @@ module.exports = class extends Command {
           voiceChannel: interaction.member.voice.channel.id,
           textChannel: interaction.channel.id
       })
-          if (player.state !== "CONNECTED") { 
+          if (player.state !== "CONNECTED") {
             player.connect();
             player.stop();
+
+            var vc = player.voiceChannel;
+            var voiceChannel = interaction.guild.channels.cache.get(player.voiceChannel);
+
+            const embed = new MessageEmbed()
+              .setColor('RANDOM')
+              .setFooter(`${interaction.user.username}`, interaction.member.displayAvatarURL({ format:"png"}))
+              .setTitle(`Conectado!`)
+              .setDescription(`Fui conectado em: \`${vc ? voiceChannel ? voiceChannel.name : vc : "não foi possível obter dados do canal de voz"}\``)
+
+            return interaction.channel.send({ embeds: [embed] })
+
           }
+          
           else {
+            try {
             var vc = player.voiceChannel;
             var voiceChannel = interaction.guild.channels.cache.get(player.voiceChannel);
             
@@ -34,6 +48,11 @@ module.exports = class extends Command {
               .setDescription(`Estou conectado em: \`${vc ? voiceChannel ? voiceChannel.name : vc : "não foi possível obter dados do canal de voz"}\``)
 
             return interaction.channel.send({ embeds: [embed] })
+          } catch (e) {
+            console.log(String(e.stack).bgRed)
           }
+          
         }
+      }
+    
     }
