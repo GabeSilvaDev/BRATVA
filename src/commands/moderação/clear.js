@@ -17,7 +17,7 @@ module.exports = class extends Command {
 
     run = async (interaction) => {
         
-        try {
+       /* try {
             if(!interaction.member.permissions.has("MANAGE_MESSAGES")) return interaction.followUp({content: `Você não tem permissão para isso!`});
             if(!interaction.guild.me.permissions.has("MANAGE_MESSAGES")) return interaction.followUp({content: `Eu não tenho permissão para isso!`});
             let delamount = interaction.options.getString('quantidade');
@@ -34,6 +34,6 @@ module.exports = class extends Command {
           
         } catch (e) {
             console.log(e)
-        }
+        }*/
     }
 }
