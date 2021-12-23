@@ -99,7 +99,11 @@ module.exports = class extends Command {
             
                     .setDescription(`**${interaction.user} O painel de ajuda foi encerrado.**`)
                         
-                    m.channel.send({embeds: [closed], ephemeral: true });
+                    m.channel.send({embeds: [closed], ephemeral: true }).then(m => {
+                        setTimeout(() => {
+                          m.delete()
+                        }, 10000)
+                    })
                     
             }
         })
