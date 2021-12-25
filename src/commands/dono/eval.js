@@ -1,4 +1,5 @@
 const Command = require('../../structures/Command')
+const { MessageEmbed } = require('discord.js');
 
 module.exports = class extends Command {
     constructor(client) {
@@ -21,20 +22,21 @@ module.exports = class extends Command {
         
         const { inspect } = require('util');
 
-        let command = args.join(" ");
-
-        let embed = new Discord.MessageEmbed();
+        let command = interaction.options.getString('codigo')
+        //const search = interaction.options.getString('música')
+        const embed = new MessageEmbed()
 
         try {
             let evaled = eval(command);
             embed.addField(`Tipo`, `\`\`\`js\n${typeof(evaled)}\`\`\``, true);
             embed.addField(`Saída`, `\`\`\`js\n${inspect(evaled, {depth: 0})}\`\`\``);
-            interaction.followUp({ embeds: [embed] })
+
+            interaction.reply({ embeds: [embed] })
             .catch(err => console.log("erro: " + err.message));
 
         } catch (error) {
             embed.addField(`Erro`, `\`\`\`js\n${error}\`\`\``);
-            interaction.followUp({ embeds: [embed] });
+            interaction.reply({ embeds: [embed] });
     }
     }
 }
