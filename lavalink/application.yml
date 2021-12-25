@@ -5,7 +5,7 @@ server: # REST and WS server
 lavalink:
   server:
     password: "discloud"
-    playerUpdateInterval: 5 # How frequently to send player updates to clients, in seconds
+    playerUpdateInterval: 5 # How frequently to sen player updates to clients, in seconds
     statsTaskInterval: 30 # How frequently to send the node stats to clients, in seconds
     koe:
       useEpoll: true
