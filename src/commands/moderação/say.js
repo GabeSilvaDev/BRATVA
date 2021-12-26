@@ -16,7 +16,7 @@ module.exports = class extends Command {
     }
 
     run = (interaction) => {
-        if (!interaction.member.permissions.has("MANAGE_MESSAGES")) return message.reply({ content: "você não tem permissão para usar esse comando!", epehemeral: true });
+        if (!interaction.member.permissions.has("MANAGE_MESSAGES")) return interaction.reply({ content: "você não tem permissão para usar esse comando!", epehemeral: true });
 
         const sayMessage = interaction.options.getString('mensagem');
 
