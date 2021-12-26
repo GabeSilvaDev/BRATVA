@@ -14,9 +14,11 @@ module.exports = class extends Command {
 
         let owner = ['672644638770987019']
 
-        if (!owner.includes(message.author.id)) return interaction.reply({ content: ":x: | Você não é meu dono!", ephemeral: true })
-
-        const guild = client.guilds.cache.sort((a, b) => b.memberCount - a.memberCount).first(30);
+        if (!owner.includes(interaction.user.id)) return interaction.reply({ content: ":x: | Você não é meu dono!", ephemeral: true })
+        try {
+            let servers = interaction.guilds
+            let a = (servers.cache.map(se => `Nome: ${se.name} - ID: \`${se.id}\`\n`).slice(0,10))
+            let b = (servers.cache.map(se => `Nome: ${se.name} - ID: \`${se.id}\`\n`).slice(10,20))
 
         const embed = new MessageEmbed()
 
@@ -25,5 +27,9 @@ module.exports = class extends Command {
         .setFooter(`${interaction.user.username}`, interaction.member.displayAvatarURL({ format:"png"}))
 
         interaction.followUp({ embeds: [embed]});
+
+        } catch(e) {
+            console.log(e)
+        }
     }
 }

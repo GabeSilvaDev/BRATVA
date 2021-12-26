@@ -24,7 +24,7 @@ module.exports = class extends Command {
 
         let owner = ['672644638770987019']
 
-        if (!owner.includes(message.author.id)) return interaction.reply({ content: ":x: | Você não é meu dono!", ephemeral: true })
+        if (!owner.includes(interaction.user.id)) return interaction.reply({ content: ":x: | Você não é meu dono!", ephemeral: true })
 
         let command = interaction.options.getString('codigo')
         //const search = interaction.options.getString('música')
