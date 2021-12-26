@@ -20,7 +20,8 @@ module.exports = class extends Command {
         return interaction.reply({ content: "você não tem permissão para usar esse comando!", epehemeral: true });
 
         const sayMessage = interaction.options.getString('mensagem');
-
+        
+        interaction.reply({ content: 'Mensagem Enviada!', ephemeral: true })
         interaction.channel.send(sayMessage);
     }
 }
