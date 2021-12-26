@@ -50,10 +50,12 @@ module.exports = class extends Command {
             
             memberTarget.ban({reason: rr || `Banido pelo dono do server!`})
            
-        };
+        } else {
         interaction.followUp({content: `${user} foi banido! Motivo: ` +  rra })
 
         memberTarget.ban({reason: rra})
+
+        }
 
 
 
