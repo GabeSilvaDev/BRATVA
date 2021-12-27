@@ -31,7 +31,7 @@ module.exports = class extends Command {
         const memberTarget = interaction.guild.members.cache.get(user.id);
         let rra = interaction.options.getString("motivo");
 
-        if(rra == null) rra = `Sem motivo`;
+        //if(rra == null) rra = `Sem motivo`;
 
         if(user.id == interaction.user.id) return interaction.followUp({ content: `Você não pode se banir!`, epehemral: true });
         if(user.id == interaction.guild.me.id) return interaction.followUp({content: `Você não pode me banir!`, ephemeral: true });
@@ -44,7 +44,7 @@ module.exports = class extends Command {
         return interaction.reply({ content: "Eu não tenho permissão para banir usuários!", epehemeral: true })
 
 
-        interaction.reply({content: `${user} foi banido! Motivo: ` +  rra })
+        interaction.channel.send({content: `${user} foi banido! Motivo: ` +  rra })
 
         memberTarget.ban({reason: rra})
 
