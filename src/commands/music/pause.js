@@ -26,6 +26,6 @@ module.exports = class extends Command {
         .setDescription(`Musica Pausada com Sucesso!`)
         .setTimestamp()
         .setFooter(`${interaction.user.username}`, interaction.member.displayAvatarURL({ format:"png"}))
-        return interaction.reply({ embeds: [embed], ephemeral: true })
+        return interaction.reply({ embeds: [embed] })
     }
 }

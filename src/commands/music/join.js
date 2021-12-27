@@ -33,7 +33,7 @@ module.exports = class extends Command {
               .setDescription(`Fui conectado em: \`${vc ? voiceChannel ? voiceChannel.name : vc : "não foi possível obter dados do canal de voz"}\``)
 
             return interaction.channel.send({ embeds: [embed] })
-
+            
           }
           
           else {

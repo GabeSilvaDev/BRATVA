@@ -37,7 +37,7 @@ module.exports = class extends Command {
         .setDescription(`Volume Colocado para: \`${volume}\`.`)
         .setTimestamp()
         .setFooter(`${interaction.user.username}`, interaction.member.displayAvatarURL({ format:"png"}))
-        return interaction.reply({ embeds: [embed], ephemeral: true })
+        return interaction.reply({ embeds: [embed] })
 
     }
 }
