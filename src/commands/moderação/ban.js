@@ -44,7 +44,7 @@ module.exports = class extends Command {
         return interaction.reply({ content: "Eu não tenho permissão para banir usuários!", epehemeral: true })
 
 
-        interaction.followUp({content: `${user} foi banido! Motivo: ` +  rra })
+        interaction.reply({content: `${user} foi banido! Motivo: ` +  rra })
 
         memberTarget.ban({reason: rra})
 
