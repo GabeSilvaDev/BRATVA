@@ -1,3 +1,4 @@
 module.exports = {
-    guilds: require('./Guild')
+    guilds: require('./Guild'),
+    premium: require('./premium'),
 }

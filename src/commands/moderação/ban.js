@@ -25,7 +25,6 @@ module.exports = class extends Command {
 
     run = (interaction) => {
         try {
-        //interaction.reply({ content: "Em criação", ephemeral: true })
 
         let user = interaction.options.getUser("usuario");
         const memberTarget = interaction.guild.members.cache.get(user.id);
