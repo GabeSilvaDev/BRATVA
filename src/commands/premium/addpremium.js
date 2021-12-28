@@ -9,7 +9,7 @@ module.exports = class extends Command {
             description: 'Adiciona o premium para alguem!',
             type: 'CHAT_IMPUT',
             requireDatabase: true,
-            premium: true,
+            premium: false,
             options: [
                 {
                     name: 'usuário',

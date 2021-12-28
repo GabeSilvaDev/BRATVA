@@ -8,7 +8,7 @@ module.exports = class extends Command {
             description: 'Retire o premium de alguem!',
             type: 'CHAT_IMPUT',
             requireDatabase: true,
-            premium: true,
+            premium: false,
             options: [
                 {
                     name: 'usuário',
