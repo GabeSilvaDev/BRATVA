@@ -16,7 +16,7 @@ module.exports = class extends Event {
 
             const cmd = this.client.commands.find(c => c.name === interaction.commandName)
             if (cmd) {
-                if(!cmd.premium && (await premiumSchema.findOne({ User: interaction.user.id}))) 
+                if(!cmd.premium && !(await premiumSchema.findOne({ User: interaction.user.id}))) 
                     return interaction.reply({ content: "Você não é premium", ephemeral: true })
                 if (cmd.requireDatabase) {
                     interaction.guild.db =
