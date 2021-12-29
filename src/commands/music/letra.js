@@ -20,7 +20,10 @@ module.exports = class extends Command {
     }
 
     run = async (interaction) => {
-        function substring(length, value) {
+        interaction.reply({ content: 'Em construção', ephemeral: true });
+
+        
+        /*function substring(length, value) {
             const replaced = value.replace(/\n/g, "--");
             const regex = `.{1,${length}}`;
             const lines = replaced.match(new RegExp(regex, "g")).map(line => line.replace('--', "\n"));
@@ -48,6 +51,6 @@ module.exports = class extends Command {
             return interaction.followUp({ embeds });
         } catch(err) {
             interaction.followUp({ content: "Ocorreu um erro ao achar a letra da musica" })
-        }
+        }*/
     }
 }
